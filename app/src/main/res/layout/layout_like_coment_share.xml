@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/like0"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/ic_vector_like"/>
+
+    <ImageView
+        android:id="@+id/comment0"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_vector_comment"
+        app:layout_constraintBottom_toBottomOf="@id/like0"
+        app:layout_constraintStart_toEndOf="@id/like0"
+        app:layout_constraintTop_toTopOf="@+id/like0"
+        android:layout_marginStart="10dp"
+
+        />
+    <ImageView
+        android:id="@+id/share0"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toEndOf="@id/comment0"
+        app:layout_constraintBottom_toBottomOf="@id/comment0"
+        app:layout_constraintTop_toTopOf="@+id/comment0"
+        android:layout_marginStart="10dp"
+
+        android:background="@drawable/ic_vector_share"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

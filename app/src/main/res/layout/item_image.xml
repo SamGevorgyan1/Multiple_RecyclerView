@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_shape_image_post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/likeImagePost"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_vector_like"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagePost" />
+
+    <ImageView
+        android:id="@+id/commentImagePost"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_vector_comment"
+        app:layout_constraintBottom_toBottomOf="@id/likeImagePost"
+        app:layout_constraintStart_toEndOf="@id/likeImagePost"
+        app:layout_constraintTop_toBottomOf="@id/imagePost"
+        android:layout_marginStart="10dp"
+
+        />
+    <ImageView
+        android:id="@+id/shareImagePost"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toEndOf="@id/commentImagePost"
+        app:layout_constraintBottom_toBottomOf="@id/commentImagePost"
+        app:layout_constraintTop_toBottomOf="@id/imagePost"
+        android:layout_marginStart="10dp"
+
+        android:background="@drawable/ic_vector_share"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
