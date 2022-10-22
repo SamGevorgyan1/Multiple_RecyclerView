@@ -92,7 +92,6 @@ init {
     shareButton.setOnClickListener{Utils.shareItem(context)}
 
 }
-
         override fun bind(item: Any) {
             (item as ImagePost).let {
                 Glide.with(context)
